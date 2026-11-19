@@ -1,0 +1,86 @@
+/* ==========================================================================
+   DESIGN TOKENS — single source of truth for colour, type, spacing, depth
+   ========================================================================== */
+:root {
+  /* Brand */
+  --navy: #082b49;
+  --navy-deep: #041d33;
+  --navy-ink: #03162a;
+  --blue: #123f60;
+  --blue-soft: #1d5279;
+  --gold: #d9a52b;
+  --gold-light: #f3d37a;
+  --gold-deep: #b8861a;
+  --gold-ink: #8a6312; /* gold text on light surfaces (AA contrast) */
+
+  /* Neutrals */
+  --bg: #f7f9fc;
+  --bg-tint: #eef3f8;
+  --surface: #ffffff;
+  --text: #102a43;
+  --text-2: #667085;
+  --text-3: #8a96a8;
+  --line: #e3e9f1;
+  --line-strong: #cfd8e4;
+
+  /* Feedback */
+  --success: #12805c;
+  --success-bg: #e8f6f0;
+  --danger: #c0352b;
+  --danger-bg: #fdeeec;
+  --info-bg: #eaf2fb;
+
+  /* Gradients */
+  --grad-gold: linear-gradient(135deg, #f6dc8f 0%, #e3b542 45%, #c99520 100%);
+  --grad-navy: linear-gradient(145deg, #0b3456 0%, #082b49 45%, #041d33 100%);
+  --grad-navy-soft: linear-gradient(160deg, #123f60 0%, #082b49 100%);
+
+  /* Typography */
+  --font-ar: 'Cairo', 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+  --font-en: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-scale: 1;
+
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.3rem;
+  --fs-xl: clamp(1.45rem, 1.1rem + 1vw, 1.8rem);
+  --fs-2xl: clamp(1.7rem, 1.2rem + 1.6vw, 2.35rem);
+  --fs-3xl: clamp(2rem, 1.3rem + 2.4vw, 3.1rem);
+  --fs-hero: clamp(2.05rem, 1.2rem + 3vw, 3.5rem);
+
+  /* Spacing & layout */
+  --container: 1240px;
+  --gutter: 24px;
+  --section-y: clamp(64px, 5vw + 32px, 108px);
+  --header-h: 92px;
+
+  /* Shape */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Depth */
+  --shadow-xs: 0 1px 2px rgba(8, 43, 73, 0.06);
+  --shadow-sm: 0 4px 14px -6px rgba(8, 43, 73, 0.14);
+  --shadow-md: 0 14px 34px -14px rgba(8, 43, 73, 0.22);
+  --shadow-lg: 0 28px 60px -24px rgba(4, 29, 51, 0.38);
+  --shadow-gold: 0 10px 26px -10px rgba(217, 165, 43, 0.65);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 160ms;
+  --t-med: 280ms;
+  --t-slow: 600ms;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+    --header-h: 74px;
+  }
+}
